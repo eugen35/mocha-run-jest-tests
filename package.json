@@ -1,0 +1,34 @@
+{
+  "name": "mocha-run-jest-tests",
+  "version": "0.1.0",
+  "description": "Run Jest tests in mocha test runner",
+  "main": "./dist/bundle.js",
+  "scripts": {
+    "test-m": "mocha --require babel-register",
+    "test-m:repl": "mocha debug --require babel-register",
+    "test-m:debug": "mocha --inspect-brk --require babel-register",
+    "test-m:debug1": "node -r babel-register --inspect-brk ./node_modules/mocha/bin/mocha",
+    "test-m:devtool": "devtool --require babel-register ./node_modules/mocha/bin/_mocha -qc -- ./test/helpers.js",
+    "build": "webpack"
+  },
+  "keywords": [
+    "mocha",
+    "jest",
+    "assertions"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/eugen35/mocha-run-jest-tests.git"
+  },
+  "license": "MIT",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1",
+    "babel-register": "^6.26.0",
+    "chai": "^4.1.2",
+    "mocha": "^4.0.1",
+    "webpack": "^3.10.0"
+  }
+}
