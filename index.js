@@ -1,3 +1,5 @@
-import {test, expect} from './src/core';
-
-module.exports = {test, expect};
+export function getJestStatements(mocha){
+  return {
+    test: (name, cb) => mocha.it(name, cb)
+  }
+}

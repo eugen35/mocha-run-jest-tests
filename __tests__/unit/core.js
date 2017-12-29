@@ -1,4 +1,9 @@
-import {test, expect} from "../../src/core";
+//import {test, expect} from "../../src/core";
+import {getJestStatements} from '../../index';
+const mocha = require('mocha');
+const expect = require('jest').expect;
+const {test} = getJestStatements(mocha);
+
 
 test('core', ()=>{
   expect(1+1).toBe(2);

@@ -11,7 +11,6 @@ module.exports = {
   resolve: {
     extensions: ['.js']
   },
-  target: 'node',
   module: {
     loaders: [{
       test: /\.js$/,
